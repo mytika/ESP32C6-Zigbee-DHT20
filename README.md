@@ -24,7 +24,7 @@ Sketch funktioniert nur, wenn man in Arduino IDE unter Tools folgende Einstellun
 - zigbee2mqtt - anlernmodus aktivieren
   - esp32c6 restart
   - esp32c6 sollte erkannt werden
-- MQTT Explorer Topics überprüfen
+- Consultez les rubriques de l'explorateur MQTT
 
 ## Links
 - ESP32C6 Zigbee Thermostat https://github.com/espressif/arduino-esp32/tree/master/libraries/Zigbee/examples/Zigbee_Temperature_Sensor
