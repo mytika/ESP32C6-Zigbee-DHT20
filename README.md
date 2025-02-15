@@ -1,13 +1,13 @@
 # ESP32-C6 Zigbee avec DHT20: Intégration dans Home Assistant via Zigbee2MQTT
 
 ESP32C6 Sketeche mit Arduino IDE.
-Sketch funktioniert nur, wenn man in Arduino IDE unter Tools folgende Einstellungen wählt
+Schéma du ESP32C6 avec Arduino IDE. Sketch ne fonctionne que si vous sélectionnez les paramètres suivants dans Arduino IDE sous Outils
 - zigbee Enddevice
 - Partion Scheme 4mb zigbee spiffs
 
 ## zigbee2mqtt in HA
 
-- in HA über Add-ons Mosquitto-Broker installieren
+- Installer Mosquitto Broker dans HA à partir des modules complémentaires
 - Créez des modules complémentaires personnalisés pour zigbee2mqtt avec l'URL suivante
   - https://github.com/zigbee2mqtt/hassio-zigbee2mqtt
 - Mettre à jour le navigateur
