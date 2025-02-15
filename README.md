@@ -1,4 +1,4 @@
-# ESP32-C6 Zigbee mit DHT20: Integration in Home Assistant über Zigbee2MQTT
+# ESP32-C6 Zigbee avec DHT20: Intégration dans Home Assistant via Zigbee2MQTT
 
 ESP32C6 Sketeche mit Arduino IDE.
 Sketch funktioniert nur, wenn man in Arduino IDE unter Tools folgende Einstellungen wählt
@@ -8,22 +8,22 @@ Sketch funktioniert nur, wenn man in Arduino IDE unter Tools folgende Einstellun
 ## zigbee2mqtt in HA
 
 - in HA über Add-ons Mosquitto-Broker installieren
-- Custom Add-ons fuer zigbee2mqtt anlegen mit folgendern url
+- Créez des modules complémentaires personnalisés pour zigbee2mqtt avec l'URL suivante
   - https://github.com/zigbee2mqtt/hassio-zigbee2mqtt
-- Browser aktualisieren
-- Jetzt im Add-on Store zigbee2mqtt installieren
-- Unter Einstellungen - System - Hardware - gesamte Hardware den USB Port für den Zigbee Sonoff Dongle suchen
-  - Falls nicht gefunden und Proxmox verwendet wird
+- Mettre à jour le navigateur
+- Installez maintenant dans le magasin complémentaire Zigbee2MQTT
+- Sous Paramètres - Système - Matériel - Toutes les recherches matérielles pour le port USB du dongle Zigbee Sonoff
+  - S'il n'est pas trouvé et que Proxmox est utilisé
   - Proxmox - VE - Hardware - Add USB Device - Use USB Vendor/Device ID - Sonoff auswähen
-  - VM neustarten!
-- Einstellungen - Add-ons - zigbee2mqtt - Konfiguration - port
+  - Redémarrez la VM !
+- Paramètres - Modules complémentaires - Zigbee2mqtt - Configuration - Port
   - port: /dev/ttyUSB0
-- zigbee2mqtt - Informationen - starten
+- zigbee2mqtt - Informations - starten
 - zigbee2mqtt - log 
-  - checken ob start oder Fehlermeldungen
-- zigbee2mqtt - anlernmodus aktivieren
-  - esp32c6 restart
-  - esp32c6 sollte erkannt werden
+  - vérifier si les messages de démarrage ou d'erreur
+- zigbee2mqtt - activer le mode d'apprentissage
+  - redémarrage de l'esp32c6
+  - esp32c6 devrait être reconnu
 - Consultez les rubriques de l'explorateur MQTT
 
 ## Links
